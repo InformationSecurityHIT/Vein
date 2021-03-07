@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="lib/webcam-capture-0.3.12-dist/examples"/>
+	<classpathentry kind="src" path="lib/webcam-capture-0.3.12-dist/src"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="jar/beautyeye_lnf.jar"/>
+	<classpathentry kind="lib" path="jar/bridj-0.7.0.jar"/>
+	<classpathentry kind="lib" path="jar/javacpp-0.11.jar"/>
+	<classpathentry kind="lib" path="jar/javacv-1.5.4.jar"/>
+	<classpathentry kind="lib" path="jar/jython-standalone-2.7.2.jar"/>
+	<classpathentry kind="lib" path="jar/mysql-connector-java-8.0.21.jar"/>
+	<classpathentry kind="lib" path="jar/opencv-2.4.11-0.11.jar"/>
+	<classpathentry kind="lib" path="jar/opencv-windows-x86_64.jar"/>
+	<classpathentry kind="lib" path="jar/slf4j-api-1.7.2.jar"/>
+	<classpathentry kind="lib" path="jar/webcam-capture-0.3.12.jar"/>
+	<classpathentry kind="lib" path="jar/xml-apis-2.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/beautyeye_lnf.jar"/>
+	<classpathentry kind="lib" path="lib/bridj-0.7.0.jar"/>
+	<classpathentry kind="lib" path="lib/javacpp-0.11.jar"/>
+	<classpathentry kind="lib" path="lib/javacv-1.5.4.jar"/>
+	<classpathentry kind="lib" path="lib/jython-standalone-2.7.2.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-8.0.21.jar"/>
+	<classpathentry kind="lib" path="lib/opencv-2.4.11-0.11.jar"/>
+	<classpathentry kind="lib" path="lib/opencv-windows-x86_64.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.7.2.jar"/>
+	<classpathentry kind="lib" path="lib/webcam-capture-0.3.12-dist/libs/bridj-0.7.0.jar"/>
+	<classpathentry kind="lib" path="lib/webcam-capture-0.3.12-dist/libs/slf4j-api-1.7.2.jar"/>
+	<classpathentry kind="lib" path="lib/webcam-capture-0.3.12-dist/libs/webcam-capture-0.3.12.jar"/>
+	<classpathentry kind="lib" path="lib/webcam-capture-0.3.12.jar"/>
+	<classpathentry kind="lib" path="lib/xml-apis-2.0.2.jar"/>
+	<classpathentry kind="output" path="out/production/DZH"/>
+</classpath>
