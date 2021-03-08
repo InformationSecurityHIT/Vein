@@ -42,7 +42,6 @@ public class dis {
 
     /**
      * 识别静脉并进行匹配
-     *
      * @param webcam0 摄像头
      * @param p2      识别界面的JPanel
      * @param db      数据库
@@ -130,6 +129,9 @@ public class dis {
                                     System.out.println(line);
                                     //break;
                                 }
+                                in.close();
+                                proc.waitFor();
+                                proc.destroy();
                                 long end_time = System.currentTimeMillis();
                                 System.out.println("Match time:" + (end_time - start_time) / 1000);
                                 String name = null;
@@ -142,9 +144,9 @@ public class dis {
                                     throwables.printStackTrace();
                                 }
                                 String finalName = name;
-                                new Thread(new Runnable() {
-                                    @Override
-                                    public void run() {
+//                                new Thread(new Runnable() {
+//                                    @Override
+//                                    public void run() {
                                         name_cut.setText(finalName);
                                         tem_cut.setText(String.valueOf(tem));
                                         nowtime_cut.setText(df.format(new Date()));
@@ -155,14 +157,14 @@ public class dis {
                                         picture_cut.setBounds(908, 100, 200, 200);
                                         p2.add(picture_cut);
                                         p2.updateUI();
-                                    }
-                                }).start();
-                                in.close();
-                                proc.waitFor();
-                            } catch (InterruptedException interruptedException) {
-                                interruptedException.printStackTrace();
+//                                    }
+//                                }).start();
+//                                in.close();
+//                                proc.waitFor();
                             } catch (IOException ioException) {
                                 ioException.printStackTrace();
+                            } catch (InterruptedException interruptedException) {
+                                interruptedException.printStackTrace();
                             }
                         }
                     }

@@ -7,8 +7,8 @@ if __name__ == "__main__":
 
     imagePath = sys.argv[1]  # 获得注册人图片所在文件夹的绝对路径的绝对路径
     destRoot = sys.argv[2]  # 处理后图片所在的文件夹
-    # imagePath = "D:\\work\\Java\\code\\DZH\\data_before\\47"
-    # destRoot = "D:\\work\\Java\\code\\DZH\\data_after\\47"
+    # imagePath = "D:\\Lab\\Info_Security\\DZH\\data_before\\95"
+    # destRoot = "D:\\Lab\\Info_Security\\DZH\\data_after\\95"
     images = os.listdir(imagePath)
     i = 0
     df = pd.DataFrame()
@@ -19,6 +19,6 @@ if __name__ == "__main__":
         features = extract_feature.HOG_feature_extraction_from_numpy(processed_image)
         df[i] = features
         i = i + 1
-    feature_data_path = "D:\\InformationSecurityCompetition\\DZH\\features_data\\" + name.split("_")[0] + ".csv"
+    feature_data_path = "D:\\Lab\\Info_Security\\DZH\\features_data\\" + name.split("_")[0] + ".csv"
     df.to_csv(feature_data_path, header=False, index=False)
     print("image process over.")

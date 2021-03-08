@@ -136,9 +136,8 @@ public class input {
                             File fa[] = f.listFiles();
                             for (int i = 0; i < fa.length; i++) {//循环遍历
                                 File fs = fa[i];//获取数组中的第i
-                                System.out.println(fs.getName());//否则直接输出
+                                //System.out.println(fs.getName());//否则直接输出
                             }
-                            System.out.print("fa_length:" + fa.length);
                             proc = Runtime.getRuntime().exec(args);
                             BufferedReader in = new BufferedReader(new InputStreamReader(proc.getInputStream()));
                             String line = null;
@@ -146,8 +145,8 @@ public class input {
                                 System.out.println(line);
                             }
                             in.close();
-                            int res = proc.waitFor();
-                            System.out.println(res);
+                            proc.waitFor();
+//                            System.out.println(res);
                         } catch (IOException ev) {
                             ev.printStackTrace();
                         } catch (InterruptedException ev) {
