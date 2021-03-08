@@ -20,7 +20,7 @@ def max_list(lt):
 
 # 拿着这个人提取出的HOG特征去查找匹配这个人
 # 这个地方没有拒绝识别的代码
-def search_for_match(feature, dataRoot="D:\\Lab\\Info_Security\\DZH\\features_data"):
+def search_for_match(feature, dataRoot="D:\InformationSecurityCompetition\DZH\\features_data"):
     registers = os.listdir(dataRoot)
     dis_dic = {}
     for register in registers:

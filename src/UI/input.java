@@ -21,7 +21,7 @@ import java.io.InputStreamReader;
 
 public class input {
 
-    private static String PATH = "D:\\Lab\\Info_Security\\DZH\\";
+    private static String PATH = "D:\\InformationSecurityCompetition\\DZH\\";
     private JButton cut2 = new JButton("\u622A\u56FE");
     private DBBean db;
     private Webcam webcam;

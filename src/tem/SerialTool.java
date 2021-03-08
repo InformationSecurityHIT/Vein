@@ -43,7 +43,7 @@ public class SerialTool {
                 } catch (UnsupportedCommOperationException e) {
                     throw new SerialPortParameterFailure();
                 }
-//                System.out.println("Open " + portName + " sucessfully !");
+                System.out.println("Open " + portName + " sucessfully !");
                 return serialPort;
             } else {
                 //不是串口
